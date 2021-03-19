@@ -1,0 +1,155 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://janschill.com/}{\Large Jan Schill}} & Email : \href{mailto:janschill@me.com}{janschill@me.com}\\
+  & Mobile : +45-27620100 \\
+\end{tabular*}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {IT University of Copenhagen}{Copenhagen, Denmark}
+      {Master of Science in Computer Science}{Sep. 2019--Jun. 2021}
+    \resumeSubheading
+      {Hochschule Flensburg University of Applied Science}{Flensburg, Germany}
+      {Bachelor of Science in Media Informatics}{Sep. 2015--Aug. 2019}
+    \resumeSubheading
+      {Valley Lutheran High School}{Phoenix, Arizona}
+      {1-year AFS student in a foreign-exchange program}{Aug. 2010--May 2011}
+    \resumeSubheading
+      {Auguste-Viktoria-Gymnasium}{Flensburg, Germany}
+      {Sociologically bilingual graduation with Geography as main topic}{2004--2014}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Zendesk}{Copenhagen, Denmark}
+      {Student Developer}{Oct. 2019--Present}
+      \resumeItemListStart
+        \resumeItem{Ruby on Rails}
+          {Incrementally upgrade Rails; develop in large Rails application.}
+        \resumeItem{Dual-boot framework}
+          {Impelement a dual-boot tool to run two versions of Rails parallel in testing pipeline.}
+        \resumeItem{AWS RDS}
+          {Find a strategy for resilience in unhealthy database clusters.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {visuellverstehen GmbH}{Flensburg, Germany}
+      {Full Stack Web Developer}{Jan. 2018--Sep. 2019}
+      \resumeItemListStart
+        \resumeItem{PHP with Laravel}
+          {Custom web application solutions using PHP and the Laravel framework.}
+        \resumeItem{Vue.js}
+          {Single Page Applcation development with frontend reactive framework Vue.js.}
+        \resumeItem{TYPO3}
+          {Website development with a powerful CMS called TYPO3 based on PHP.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Weinstube im Krusehof}{Flensburg, Germany}
+      {Software Development}{Mar. 2018--Sep. 2019}
+      \resumeItemListStart
+        \resumeItem{PHP with Laravel}
+          {Developing a JSON API and Laravel backend}
+        \resumeItem{Vue.js}
+          {Building a reactive SPA with WebSockets for continoues communication between two iPads}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Buero Oeding}{Flensburg, Germany}
+      {Web Designer}{Sep. 2017--Jan. 2018}
+      \resumeItemListStart
+        \resumeItem{Screen Designs}
+          {Build modern screen designs using Adobe XD.}
+        \resumeItem{Print media}
+          {Using the Adobe Suite (Mainly InDesign, Photoshop and Illustrator) to create print products.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Modern SPA with PWA technologies}
+      {I have developed a web application, using modern technologies like service workers, Push API, and Vue.js. The application was developed for use by an organization to raise awareness of vehicular CO2 emissions. The company has created unique ride-sharing opportunities intended to reduce unhealthy emissions. I was responsible for developing an application that allows users to send “push notifications” to registered users at specific locations. The primary focus of this project was to create a dynamic Progressive Web Application that interacts like a native application. A challenge was to provide push notifications on iOS which I addressed by using SMS and email notifications.}
+    \resumeSubItem{Laravel web application with reactive VanillaJavaScript frontend}
+      {I built a Laravel application with VanillaJavaScript front-end for a restaurant in Flensburg. The software provides a structured overview of waiting guests, register incoming customers and associate them with a number. The goal was to maintain a structured list of waiting customers for fair and efficient seating. The web application can be run on two iPads: One registers new guests. The other assigns them to tables. They are networked using Pusher to maintain a communication channel using the WebSocket protocol. This allows the system to send notifications and update the DOM as new data is collected.}
+  \resumeSubHeadingListEnd
+
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Ruby, JavaScript, Scala, PHP, Python, Java, HTML, CSS, SQL}
+     \hfill
+   \item
+     \textbf{Technologies}{: Rails, AWS, Laravel, Vue.js, Git, Datadog}
+   }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
