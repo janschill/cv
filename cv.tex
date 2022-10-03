@@ -62,7 +62,7 @@
 \begin{document}
 
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://janschill.net/}{\Large Jan Schill}} & Email : \href{mailto:schill@hey.com}{schill@hey.com}\\
+  \textbf{\href{https://janschill.net/}{\Large Jan Schill}} & Email : \href{mailto:janschill@proton.me}{janschill@proton.me}\\
   & Mobile : +45-27620100 \\
 \end{tabular*}
 
@@ -83,6 +83,7 @@
       {Zendesk}{Copenhagen, Denmark}
       {Software Engineer}{Aug. 2021--Present}
       \resumeItemListStart
+        \resumeItem{BYOK Service}{Java Service to enable \textit{bring-your-own-key} for Zendesk services.}
         \resumeItem{Ruby Library Distributed Authentication}
           {Develop a Ruby library for company-wide authentication/authorization usage.}
         \resumeItem{Ruby Starter Kit}
@@ -120,8 +121,6 @@
           {Custom web application solutions using PHP and the Laravel framework.}
         \resumeItem{Vue.js}
           {Single Page Application development with frontend reactive framework Vue.js.}
-        \resumeItem{TYPO3}
-          {Website development with a powerful CMS called TYPO3 based on PHP.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -129,18 +128,17 @@
 
 \section{Projects}
   \resumeSubHeadingListStart
+    \resumeSubItem{Java BYOK Service}{Bring Your Own Key is an encryption technique that allows the encrypting and decrypting of data with externally held encryption keys. This guarantees that plaintext data cannot get into the wrong hands. This project is still ongoing and I have so far set up the Kubernetes deployment of a few coupled services in a Service Mesh environment; composed a solution design for a key rotation and a backfill process; all observability requirements. The day to day work involves programming new features in the Java service.}
     \resumeSubItem{CERN-Solid Code Investigation}
       {As part of my Master's thesis I worked on a code investigation with CERN and Solid. This research aims at observing beneﬁts and drawbacks on the integration of the Solid speciﬁcations into a large and sophisticated software system. Solid is a web decentralization project led by Sir Tim Berners-Lee and was initially developed at the MIT. The idea is to change how web applications work with data, resulting in data ownership fully controlled by the user/content creator. The investigation is carried out in collaboration with CERN. CERN and the Solid project share a lot of common values and is therefore interested in the success of the decentralization project.}
     \resumeSubItem{Compiler Optimization for DOM Diﬃng}
       {As a university project a fellow student and I created a functional language with a compiler written in FSharp. The compiler had optimizations like partial evaluation and symbolic execution to improve the DOM diﬃng algorithm. The idea was in MVC web applications a lot of resources are wasted on comparing two versions of the vDOM when an update occurred. This comparison could be done during compilation of the web application written with our own language and framework. It would compile to JavaScript and instead of doing any diﬃng in the frontend it would have the change attached to the event producing the change.}
-    \resumeSubItem{Laravel Web Application with Reactive VanillaJavaScript Frontend}
-      {I built a Laravel application with VanillaJavaScript front-end for a restaurant in Flensburg. The software provides a structured overview of waiting guests, register incoming customers and associate them with a number. The goal was to maintain a structured list of waiting customers for fair and efficient seating. The web application can be run on two iPads: One registers new guests. The other assigns them to tables. They are networked using Pusher to maintain a communication channel using the WebSocket protocol. This allows the system to send notifications and update the DOM as new data is collected.}
   \resumeSubHeadingListEnd
 
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: Ruby, JavaScript, HTML, CSS, SQL}
+     \textbf{Languages}{: Ruby, TypeScript, Java}
      \hfill
    \item
      \textbf{Technologies}{: Ruby on Rails, Linux, Docker, Kubernetes, DigitalOcean, AWS, Git, Datadog }
