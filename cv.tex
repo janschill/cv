@@ -81,21 +81,25 @@
 
     \resumeSubheading
       {Zendesk}{Copenhagen, Denmark}
-      {Software Engineer}{Aug. 2021--Present}
+      {Software Engineer II}{Aug. 2021--Present}
       \resumeItemListStart
         \resumeItem{BYOK Service}{Java Service to enable \textit{bring-your-own-key} for Zendesk services.}
         \resumeItem{Ruby Library Distributed Authentication}
           {Develop a Ruby library for company-wide authentication/authorization usage.}
         \resumeItem{Ruby Starter Kit}
           {Establish Ruby development guidelines for an organization of +1000 engineers.}
-      \resumeItemListEnd 
+        \resumeItem{Security Champion}
+          {Threat modeling of our service; foster a security mindset within the team; manage a cryptography meet-up.}
+        \resumeItem{Reliability Champion}
+          {Advocate good practices for logging, monitoring, and alerting in the team; define SLAs, SLOs, and SLIs together with stakeholders }
+      \resumeItemListEnd
 
     \vspace{-2pt}
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
     \vspace{-5pt}
       \textit{\small Student Developer} & \textit{\small Oct. 2019--Aug. 2021} \\
     \end{tabular*}\vspace{-5pt}
-    
+
       \resumeItemListStart
         \resumeItem{Ruby on Rails}
           {Incrementally upgrade Rails; develop in large Rails application.}
@@ -128,20 +132,18 @@
 
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Java BYOK Service}{Bring Your Own Key is an encryption technique that allows the encrypting and decrypting of data with externally held encryption keys. This guarantees that plaintext data cannot get into the wrong hands. This project is still ongoing and I have so far set up the Kubernetes deployment of a few coupled services in a Service Mesh environment; composed a solution design for a key rotation and a backfill process; all observability requirements. The day to day work involves programming new features in the Java service.}
+    \resumeSubItem{Java BYOK Service}{Bring Your Own Key is an encryption technique that allows encrypting and decrypting of data with an externally held encryption keys. This gives the one holding the key the control over confidentiality on their data. First the project had to be designed as a Java service providing BYOK to Zendesk's vast product ecosystem without substantially comprising request latency of the around 250,000 requests per second to Zendesk's Edge layer. A few implementation details done by me are: \textit{Dockerizing}, configuring deployments for our Istio service mesh and setting up a continuous integration pipeline; setting up and defining logs, metrics and tracing with DataDog monitors attached to commit to service level agreements; compiling decision records on customer key rotation and backfill of existing data; development of several modules in the newly built Java encryption service.}
     \resumeSubItem{CERN-Solid Code Investigation}
       {As part of my Master's thesis I worked on a code investigation with CERN and Solid. This research aims at observing beneﬁts and drawbacks on the integration of the Solid speciﬁcations into a large and sophisticated software system. Solid is a web decentralization project led by Sir Tim Berners-Lee and was initially developed at the MIT. The idea is to change how web applications work with data, resulting in data ownership fully controlled by the user/content creator. The investigation is carried out in collaboration with CERN. CERN and the Solid project share a lot of common values and is therefore interested in the success of the decentralization project.}
-    \resumeSubItem{Compiler Optimization for DOM Diﬃng}
-      {As a university project a fellow student and I created a functional language with a compiler written in FSharp. The compiler had optimizations like partial evaluation and symbolic execution to improve the DOM diﬃng algorithm. The idea was in MVC web applications a lot of resources are wasted on comparing two versions of the vDOM when an update occurred. This comparison could be done during compilation of the web application written with our own language and framework. It would compile to JavaScript and instead of doing any diﬃng in the frontend it would have the change attached to the event producing the change.}
   \resumeSubHeadingListEnd
 
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: Ruby, TypeScript, Java}
+     \textbf{Languages}{: Ruby, JavaScript, Java, Python }
      \hfill
    \item
-     \textbf{Technologies}{: Ruby on Rails, Linux, Docker, Kubernetes, DigitalOcean, AWS, Git, Datadog }
+     \textbf{Technologies}{: Ruby on Rails, Vert.x, Linux, Docker, Kubernetes, Service Mesh, GitHub Actions, DigitalOcean, AWS, Git, DataDog, Sentry }
    }
  \resumeSubHeadingListEnd
 
